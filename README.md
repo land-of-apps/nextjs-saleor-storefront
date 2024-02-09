@@ -1,12 +1,10 @@
 ## Quickstart
 
 ```
-cd saleor-platform/
-docker compose -f saleor-platform/docker-compose.yml up -d
+docker compose up -d
 docker compose run --rm api python3 manage.py migrate
 docker compose run --rm api python3 manage.py populatedb
 docker compose run --rm api python3 manage.py createsuperuser # enter email/password for dashboard
-cd ..
 ```
 
 If your containers are built
@@ -15,7 +13,7 @@ If your containers are built
 docker compose -f saleor-platform/docker-compose.yml up -d
 ```
 
-Login to the dashboard: http://localhost:9000/dashboard/
+Login to the dashboard: [http://localhost:9000/dashboard/](http://localhost:9000/dashboard/)
 
 Copy `.env.example` to `.env`:
 
@@ -37,7 +35,7 @@ To start the development server, run the following:
 npx appmap-node pnpm dev
 ```
 
-The app is now running at `http://localhost:3000`.
+The app is now running at [http://localhost:3000](http://localhost:3000).
 
 <div align="center">
   <h1>Next.js Storefront</h1>

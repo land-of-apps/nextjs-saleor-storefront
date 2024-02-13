@@ -10,7 +10,7 @@ docker compose run --rm api python3 manage.py createsuperuser # enter email/pass
 If your containers are built
 
 ```
-docker compose -f saleor-platform/docker-compose.yml up -d
+docker compose up -d
 ```
 
 Login to the dashboard: [http://localhost:9000/dashboard/](http://localhost:9000/dashboard/)
